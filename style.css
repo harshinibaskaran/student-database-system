@@ -1,0 +1,71 @@
+/* Resetting and setting global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    background-color: #000; /* Full black background */
+    color: white; /* White text for contrast */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    background-color: #121212; /* Slightly lighter black for the container */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+input, button {
+    padding: 12px;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #1c1c1c;
+    color: white;
+}
+
+button {
+    background-color: #1e90ff;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #007acc;
+}
+
+#leaderboard, #assignments {
+    background: #1c1c1c;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#assignmentList, #leaderboardList {
+    list-style: none;
+    padding: 0;
+}
+
+#assignmentList li, #leaderboardList li {
+    background: #333;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Chart container styling */
+canvas {
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 10px;
+}
+

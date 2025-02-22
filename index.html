@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Database Management System</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Chart.js for data visualization -->
+</head>
+<body>
+
+    <div class="container">
+        <h1>🌟 Student Database Management System 🌟</h1>
+
+        <!-- Search Section -->
+        <div class="controls">
+            <input type="text" id="searchInput" placeholder="🔍 Search student by name..." onkeyup="searchStudent()">
+        </div>
+
+        <!-- Add Student Form -->
+        <form id="studentForm">
+            <input type="text" id="name" placeholder="Student Name" required>
+            <input type="number" id="age" placeholder="Age" required>
+            <input type="text" id="grade" placeholder="Grade" required>
+            <input type="file" id="profilePic" accept="image/*">
+            <button type="submit">Add Student</button>
+        </form>
+
+        <!-- Leaderboard Section -->
+        <div id="leaderboard">
+            <h2>🏆 Leaderboard</h2>
+            <ul id="leaderboardList"></ul>
+        </div>
+
+        <!-- Grade Distribution Chart -->
+        <canvas id="gradeChart"></canvas>
+
+        <!-- Assignment Tracker -->
+        <div id="assignments">
+            <h2>📅 Assignments</h2>
+            <input type="text" id="assignment" placeholder="New Assignment">
+            <button onclick="addAssignment()">Add Assignment</button>
+            <ul id="assignmentList"></ul>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
